@@ -35,14 +35,14 @@ body {
     color: white;
     padding: 20px 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.25)), url('https://wallpapercave.com/wp/wp7563482.jpg');
+    background: linear-gradient(rgba(0,0,0,0.2),#00000066), url('https://wallpapercave.com/wp/wp7563482.jpg');
     background-size: cover;
     position: relative;
 }
 
 /* .weather-container::after {
     content: '';
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.45);
     position: absolute;
     opacity: .5;
     top: 0px;
@@ -74,16 +74,27 @@ body {
 .weather-info .weather-info__city {
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .weather-info .weather-info__temp {
     font-size: 3rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .weather-info .weather-info__temp span {
     font-size: 1.5rem;
     font-weight: normal;
+}
+
+.weather-info__icon {
+    text-align: center;
+}
+.weather-info__icon img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
 }
 
 .list-group-item {

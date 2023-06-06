@@ -4,14 +4,11 @@ let products;
 function esperarResultado() {
 
     return new Promise(function(resolve, reject) {
-
         setTimeout(() => {
             products = ['XBOX', 'PS5', 'Nintendo', 'Family'];
             // lateName = 'Delayed user';
             resolve()
         }, 4000);
-        
-
     });
 
 }
@@ -21,8 +18,8 @@ esperarResultado()
         console.log(`Se resolvió`);
         products.forEach(prod => console.log(prod));
 
-    }).catch((error) => {
-        console.warn('La promesa falló')
+    }).catch(function(error)  {
+        console.warn('La promesa falló', error)
     })
 // esperarResultado()
 //     .then((resolucion) => {
