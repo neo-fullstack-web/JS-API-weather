@@ -12,7 +12,7 @@ body {
 .main-container {
     flex: 1;
     display: grid;
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: 1fr 300px;
     background-color: white;
     padding-right: 0;
 }
@@ -58,7 +58,7 @@ body {
     font-size: 1rem;
     outline: none;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.375rem;
     width: 100%;
 }
 
@@ -99,4 +99,47 @@ body {
 
 .list-group-item {
     border-radius: 0 !important;
+}
+.card {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.card-body .card-footer {
+    padding: .5rem 1rem;
+}
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+    height: 48px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.card-text {
+    flex: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }

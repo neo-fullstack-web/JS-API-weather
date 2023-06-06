@@ -14,12 +14,16 @@
         const products = JSON.parse(localStorage.getItem('prodcuts'))
 
         const urlParams = new URLSearchParams(window.location.search);
+
+        const entries = Object.fromEntries(urlParams.entries());
+
+
         let product;
         const paramID = urlParams.get('id');
-        console.log(`Param id: ${id}`)
-        product =  products.find(prod => {
-            return prod.id === paramID
-        });
+
+        // product =  products.find(prod => {
+        //     return prod.id === paramID
+        // });
 
         
     </script>
